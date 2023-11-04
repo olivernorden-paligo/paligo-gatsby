@@ -1,0 +1,58 @@
+[02/Nov/2023 08:11:14 Europe/Dublin] [Info] ############################################################
+[02/Nov/2023 08:11:14 Europe/Dublin] [Info] # Output Factory initiated (xml)
+[02/Nov/2023 08:11:14 Europe/Dublin] [Info] # Building output for: CXS - Space Travel
+[02/Nov/2023 08:11:14 Europe/Dublin] [Info] # URL /document/edit/37198
+[02/Nov/2023 08:11:14 Europe/Dublin] [Info] # User: Paligo Support
+[02/Nov/2023 08:11:14 Europe/Dublin] [Info] # Time: Thu, 02 Nov 2023 08:11:14 +0000
+[02/Nov/2023 08:11:14 Europe/Dublin] [Info] # Server: mainz
+[02/Nov/2023 08:11:14 Europe/Dublin] [Info] ############################################################
+[02/Nov/2023 08:11:14 Europe/Dublin] [Info] Group: system
+[02/Nov/2023 08:11:14 Europe/Dublin] [Info] Type: xml
+[02/Nov/2023 08:11:14 Europe/Dublin] [Info] Transformation: $apppath/lib/docbook/xsl/xml/xml.xsl
+[02/Nov/2023 08:11:14 Europe/Dublin] [Info] File found: $apppath/lib/docbook/xsl/xml/xml.xsl
+[02/Nov/2023 08:11:14 Europe/Dublin] [Info] ############################################################
+[02/Nov/2023 08:11:14 Europe/Dublin] [Info] Building output for: xml
+[02/Nov/2023 08:11:14 Europe/Dublin] [Info] Using stylesheet: $apppath/lib/docbook/xsl/xml/xml.xsl
+[02/Nov/2023 08:11:14 Europe/Dublin] [Info] Parameters for this build: []
+[02/Nov/2023 08:11:14 Europe/Dublin] [Info] Environment variables for this build: []
+[02/Nov/2023 08:11:14 Europe/Dublin] [Info] Building output for languages: ["en"]
+[02/Nov/2023 08:11:14 Europe/Dublin] [Info] Building multilang: no
+[02/Nov/2023 08:11:14 Europe/Dublin] [Info] Building preview: no
+[02/Nov/2023 08:11:14 Europe/Dublin] [Info] ############################################################
+[02/Nov/2023 08:11:14 Europe/Dublin] [Info] Using build directory: $local_tmp/production-654359a0c24a24.57763309/37198-CXS_-_Space_Travel-xml
+[02/Nov/2023 08:11:15 Europe/Dublin] [Info] -- Generating source files
+[02/Nov/2023 08:11:15 Europe/Dublin] [Info] -- Propagating taxonomies: false
+[02/Nov/2023 08:11:15 Europe/Dublin] [Info] -- Source files have been generated
+[02/Nov/2023 08:11:15 Europe/Dublin] [Info] -- Publication has no unresolved dependencies.
+[02/Nov/2023 08:11:15 Europe/Dublin] [Info] -- Generating source files complete.
+[02/Nov/2023 08:11:16 Europe/Dublin] [Info] Localizing: publication-37198.xml
+[02/Nov/2023 08:11:16 Europe/Dublin] [Info] Language: en
+[02/Nov/2023 08:11:17 Europe/Dublin] [Info] Variable sets found: 1
+[02/Nov/2023 08:11:18 Europe/Dublin] [Info] Inserting image links.
+[02/Nov/2023 08:11:18 Europe/Dublin] [Info] Found 18 image(s).
+[02/Nov/2023 08:11:18 Europe/Dublin] [Info] Found image 'R2D2_3PO.jpg'
+[02/Nov/2023 08:11:18 Europe/Dublin] [Info] Found image 'Batteries_fresh.jpg'
+[02/Nov/2023 08:11:18 Europe/Dublin] [Info] Found image 'R2D2.png'
+[02/Nov/2023 08:11:18 Europe/Dublin] [Info] Found image 'Scene-24.eps'
+[02/Nov/2023 08:11:18 Europe/Dublin] [Info] Found image 'Yoda.jpg'
+[02/Nov/2023 08:11:18 Europe/Dublin] [Info] Found image 'Scared_cat.png'
+[02/Nov/2023 08:11:18 Europe/Dublin] [Info] Found image 'drone-one.jpg'
+[02/Nov/2023 08:11:18 Europe/Dublin] [Info] Found image 'SolarSystem.png'
+[02/Nov/2023 08:11:19 Europe/Dublin] [Info] Found image 'CrookedTrees.jpeg'
+[02/Nov/2023 08:11:19 Europe/Dublin] [Info] Found image 'Coconuts.png'
+[02/Nov/2023 08:11:19 Europe/Dublin] [Info] Found image 'cool_car.png'
+[02/Nov/2023 08:11:19 Europe/Dublin] [Info] Found image 'Batteries.jpg'
+[02/Nov/2023 08:11:19 Europe/Dublin] [Info] Found image 'OuterSpace.jpg'
+[02/Nov/2023 08:11:19 Europe/Dublin] [Info] Found image 'RemoveBackCover_SmartPhone-B.png'
+[02/Nov/2023 08:11:19 Europe/Dublin] [Info] Found image 'RemoveBattery_SmartPhone-B.png'
+[02/Nov/2023 08:11:19 Europe/Dublin] [Info] Found image 'ReplaceBackCover_SmartPhone-B.png'
+[02/Nov/2023 08:11:19 Europe/Dublin] [Info] Found image 'Candy.png'
+[02/Nov/2023 08:11:19 Europe/Dublin] [Info] Found image 'Hub_Charge.png'
+[02/Nov/2023 08:11:20 Europe/Dublin] [Info] Profiling parameters: []
+[02/Nov/2023 08:11:20 Europe/Dublin] [Info] Profiling customisation: $user_dir/xsl/profile.xsl (not found)
+[02/Nov/2023 08:11:20 Europe/Dublin] [Info] Transformation: publication-37198--en.org.xml -> publication-37198--en.xml [profile.xsl]
+[02/Nov/2023 08:11:20 Europe/Dublin] [Info] Transformation: publication-37198--en.xml -> publication-37198--en.xml [internal-xref.xsl]
+[02/Nov/2023 08:11:20 Europe/Dublin] [Info] Transformation: A-filelist.xml -> B-sorted.xml [IO.document.sortlang.xsl]
+[02/Nov/2023 08:11:20 Europe/Dublin] [Info] Transformation: B-sorted.xml -> C-concatenated.xml [IO.document.concat.xsl]
+[02/Nov/2023 08:11:20 Europe/Dublin] [Info] Transformation: B-sorted.xml -> index-en.xml [IO.document.head.xsl]
+[02/Nov/2023 08:11:21 Europe/Dublin] [Info] # Took 6.864766 seconds to render.
