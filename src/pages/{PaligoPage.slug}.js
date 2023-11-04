@@ -3,20 +3,11 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import XmlToReact from "../components/xmlToReact";
-import PalPara from "../components/palPara";
-import { StringToJSX } from "../components/stringToJsx";
+import "../app.css";
 
 const PaligoPage = ({ data }) => {
-    // const template = React.createElement("Fragment", {}, data.paligoPage.xml);
     return (
         <Layout pageTitle={data.paligoPage.title}>
-            {/* <pal-para>test</pal-para> */}
-            {/* <XmlToReact xml={template} /> */}
-            {/* <XmlToReact xml="<PalPara>html test</PalPara>" /> */}
-            {/* <StringToJSX domString={data.paligoPage.xml} />
-            <PalPara>my test para</PalPara>
-            <div id="xml"></div> */}
-            <XmlToReact xml="<pal-para>html tests</pal-para><pal-phrase>phrase</pal-phrase>" />
             <XmlToReact xml={data.paligoPage.xml} />
         </Layout>
     );

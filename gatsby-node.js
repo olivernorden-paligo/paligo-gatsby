@@ -1,30 +1,4 @@
 exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
-    // const { createNode } = actions;
-
-    // // Data can come from anywhere, but for now create it manually
-    // const myData = {
-    //     key: 123,
-    //     foo: `The foo field of my node`,
-    //     bar: `Baz`,
-    // };
-
-    // const nodeContent = JSON.stringify(myData);
-
-    // const nodeMeta = {
-    //     id: createNodeId(`my-data-${myData.key}`),
-    //     parent: null,
-    //     children: [],
-    //     internal: {
-    //         type: `MyNodeType`,
-    //         mediaType: `text/html`,
-    //         content: nodeContent,
-    //         contentDigest: createContentDigest(myData),
-    //     },
-    // };
-
-    // const node = Object.assign({}, myData, nodeMeta);
-    // createNode(node);
-    // return;
     const { JSDOM } = require("jsdom");
     const { readFileSync } = require("fs");
 
@@ -91,7 +65,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
         resourceIds.push(resourceId);
         convertPaligo(node.children);
 
-        pages.unshift({
+        pages.push({
             slug: "/" + resourceId,
             uid: node.getAttribute("xml:id"),
             resourceId,
@@ -105,7 +79,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     const articleInfo = article.querySelector("info");
     convertPaligo(articleInfo.children);
 
-    pages.push({
+    pages.unshift({
         slug: "/",
         uid: article.getAttribute("xml:id"),
         resourceId: article.getAttribute("xinfo:resource"),

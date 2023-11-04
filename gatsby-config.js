@@ -6,7 +6,5 @@ module.exports = {
         title: `Paligo Gatsby`,
         siteUrl: `https://www.yourdomain.tld`,
     },
-    plugins: [
-        // 'paligo-xml-plugin'
-    ],
+    plugins: [`gatsby-plugin-image`, `gatsby-plugin-sharp`],
 };

@@ -2,11 +2,12 @@ import * as React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import {
     container,
-    heading,
     navLinks,
     navLinkItem,
     navLinkText,
     siteTitle,
+    nav,
+    main,
 } from "./layout.module.css";
 
 const Layout = ({ pageTitle, children }) => {
@@ -22,17 +23,17 @@ const Layout = ({ pageTitle, children }) => {
                     id
                     slug
                     title
+                    uid
                 }
             }
         }
     `);
-    console.log(data);
     return (
         <div className={container}>
             <header className={siteTitle}>
                 {data.site.siteMetadata.title}
             </header>
-            <nav>
+            <nav className={nav}>
                 <ul className={navLinks}>
                     {data.allPaligoPage.nodes.map((node) => (
                         <li key={node.id} className={navLinkItem}>
@@ -41,22 +42,9 @@ const Layout = ({ pageTitle, children }) => {
                             </Link>
                         </li>
                     ))}
-                    <li className={navLinkItem}>
-                        <Link to="/about" className={navLinkText}>
-                            About
-                        </Link>
-                    </li>
-                    <li className={navLinkItem}>
-                        <Link to="/blog" className={navLinkText}>
-                            Blog
-                        </Link>
-                    </li>
                 </ul>
             </nav>
-            <main>
-                <h1 className={heading}>{pageTitle}</h1>
-                {children}
-            </main>
+            <main className={main}>{children}</main>
         </div>
     );
 };
