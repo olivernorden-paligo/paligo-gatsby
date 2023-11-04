@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from "gatsby-link";
-import { useStaticQuery } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 
 const PalPara = (props) => {
     const data = useStaticQuery(graphql`
@@ -36,8 +36,6 @@ const PalPara = (props) => {
         if (!page) {
             return uid;
         }
-
-        // alert(page.slug + " " + uid);
 
         return page.slug;
     };
