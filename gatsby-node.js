@@ -3,7 +3,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     const { readFileSync } = require("fs");
 
     let pub = readFileSync(
-        "./publication/out/publication-37198--en.xml",
+        "./publication/pub/out/publication-37198--en.xml",
         "utf-8"
     );
 
