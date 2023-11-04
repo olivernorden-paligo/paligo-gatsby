@@ -27,7 +27,6 @@ const PalPara = (props) => {
             return "";
         }
         uid = uid.replace("#", "");
-        console.table(data.allPaligoPage.nodes);
 
         const page = data.allPaligoPage.nodes.find((node) => {
             return uid === node.uid;
